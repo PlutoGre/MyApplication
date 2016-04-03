@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.happyjuzi.ui.activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line"
+        android:layout_above="@+id/main_rg_bottom"/>
+
+    <RadioGroup
+        android:id="@+id/main_rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="3dp">
+
+        <RadioButton
+            android:id="@+id/main_rb_home"
+            android:text="@string/main_home"
+            android:drawableTop="@drawable/main_home_selector"
+            style="@style/MainRadioButton" />
+        <RadioButton
+            android:id="@+id/main_rb_discover"
+            android:text="@string/main_discover"
+            android:drawableTop="@drawable/main_discover_selector"
+            style="@style/MainRadioButton" />
+        <RadioButton
+            android:id="@+id/main_rb_user"
+            android:text="@string/main_user"
+            android:drawableTop="@drawable/main_user_selector"
+            style="@style/MainRadioButton" />
+    </RadioGroup>
+</RelativeLayout>
